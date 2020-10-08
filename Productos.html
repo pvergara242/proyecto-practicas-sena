@@ -60,13 +60,14 @@
     </div>
     <!-- sidebar fin  -->
 
-    <form
-      className="container-form"
+    <form    
       style="
         margin-top: 100px;
         margin-left: 420px;
         width: 60%;
         justify-content: center;
+        border: 2px solid red;
+        position: static;
       "
     >
       <h2 className="title-form" style="text-align: center">
@@ -77,11 +78,11 @@
           <div class="col-md-4">
             <img
               alt="Foto del producto"
-              src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
+              src="./assets/images/1200px-Sena_Colombia_logo.svg.png"
               class="img-thumbnail"
             />
 
-            <div class="form-group">
+            <div class="form-group mt-3">
               <label for="fotoproducto"> Foto del producto </label>
               <input type="file" class="form-control-file" id="fotoproducto" />
             </div>
@@ -90,7 +91,7 @@
             <form role="form">
               <div class="form-group">
                 <label for="codigo"> Codigo producto </label>
-                <input type="number" class="form-control" id="codigo" />
+                <input type="text" class="form-control" id="codigo" />
               </div>
               <div class="form-group">
                 <label for="nombreproducto"> Nombre del producto </label>
@@ -101,17 +102,14 @@
           <div class="col-md-4">
             <ul>
               <li class="list-item">Unidades de medida</li>
-              <li class="list-item">Consectetur adipiscing elit</li>
-              <li class="list-item">Integer molestie lorem at massa</li>
-              <li class="list-item">Facilisis in pretium nisl aliquet</li>
-              <li class="list-item">Nulla volutpat aliquam velit</li>
-              <li class="list-item">Faucibus porta lacus fringilla vel</li>
-              <li class="list-item">Aenean sit amet erat nunc</li>
-              <li class="list-item">Eget porttitor lorem</li>
+              <li class="list-item">Par</li>
+              <li class="list-item">Centimetro</li>
+              <li class="list-item">Decimetro</li>
+              <li class="list-item">Milimetro</li>
             </ul>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-2">
           <div class="col-md-3">
             <label>Cantidad de inventario</label>
             <div>
@@ -142,269 +140,229 @@
             </div>
           </div>
           <div class="col-md-3">
-            <label>Cantidad de inventario</label>
+            <label>Consumo</label>
             <div>
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_0"
+                  name="consumo"
+                  id="consumo_0"
                   type="checkbox"
                   class="custom-control-input"
                   value="si"
                 />
-                <label for="cantidadInventario_0" class="custom-control-label"
-                  >Si</label
-                >
+                <label for="consumo_0" class="custom-control-label">Si</label>
               </div>
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_1"
+                  name="consumo"
+                  id="consumo_1"
                   type="checkbox"
                   class="custom-control-input"
                   value="no"
                 />
-                <label for="cantidadInventario_1" class="custom-control-label"
-                  >No</label
-                >
+                <label for="consumo_1" class="custom-control-label">No</label>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <label>Cantidad de inventario</label>
+            <label>Mercancía para la venta</label>
             <div>
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_0"
+                  name="mercancia"
+                  id="mercancia_0"
                   type="checkbox"
                   class="custom-control-input"
                   value="si"
                 />
-                <label for="cantidadInventario_0" class="custom-control-label"
-                  >Si</label
-                >
+                <label for="mercancia_0" class="custom-control-label">Si</label>
               </div>
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_1"
+                  name="mercancia"
+                  id="mercancia_1"
                   type="checkbox"
                   class="custom-control-input"
                   value="no"
                 />
-                <label for="cantidadInventario_1" class="custom-control-label"
-                  >No</label
-                >
+                <label for="mercancia_1" class="custom-control-label">No</label>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <label>Cantidad de inventario</label>
+            <label>¿Es de producción interna?</label>
             <div>
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_0"
+                  name="tipoProduccion"
+                  id="tipoProduccion_0"
                   type="checkbox"
                   class="custom-control-input"
                   value="si"
                 />
-                <label for="cantidadInventario_0" class="custom-control-label"
+                <label for="tipoProduccion_0" class="custom-control-label"
                   >Si</label
                 >
               </div>
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_1"
+                  name="tipoProduccion"
+                  id="tipoProduccion_1"
                   type="checkbox"
                   class="custom-control-input"
                   value="no"
                 />
-                <label for="cantidadInventario_1" class="custom-control-label"
+                <label for="tipoProduccion_1" class="custom-control-label"
                   >No</label
                 >
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-2">
           <div class="col-md-3">
-            <label>Cantidad de inventario</label>
+            <label>Maneja lotes</label>
             <div>
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_0"
+                  name="lotes"
+                  id="lotes_0"
                   type="checkbox"
                   class="custom-control-input"
                   value="si"
                 />
-                <label for="cantidadInventario_0" class="custom-control-label"
+                <label for="lotes_0" class="custom-control-label">Si</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="lotes"
+                  id="lotes_1"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="no"
+                />
+                <label for="lotes_1" class="custom-control-label">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label>Es servicio</label>
+            <div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="servicio"
+                  id="servicio_0"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="si"
+                />
+                <label for="servicio_0" class="custom-control-label">Si</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="servicio"
+                  id="servicio_1"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="no"
+                />
+                <label for="servicio_1" class="custom-control-label">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label>Incluir producto en conteo físico</label>
+            <div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="productoConteo"
+                  id="productoConteo_0"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="si"
+                />
+                <label for="productoConteo_0" class="custom-control-label"
                   >Si</label
                 >
               </div>
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_1"
+                  name="productoConteo"
+                  id="productoConteo_1"
                   type="checkbox"
                   class="custom-control-input"
                   value="no"
                 />
-                <label for="cantidadInventario_1" class="custom-control-label"
+                <label for="productoConteo_1" class="custom-control-label"
                   >No</label
                 >
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <label>Cantidad de inventario</label>
+            <label>Producto activo</label>
             <div>
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_0"
+                  name="productoActivo"
+                  id="productoActivo_0"
                   type="checkbox"
                   class="custom-control-input"
                   value="si"
                 />
-                <label for="cantidadInventario_0" class="custom-control-label"
+                <label for="productoActivo_0" class="custom-control-label"
                   >Si</label
                 >
               </div>
               <div class="custom-control custom-checkbox custom-control-inline">
                 <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_1"
+                  name="productoActivo"
+                  id="productoActivo_1"
                   type="checkbox"
                   class="custom-control-input"
                   value="no"
                 />
-                <label for="cantidadInventario_1" class="custom-control-label"
-                  >No</label
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <label>Cantidad de inventario</label>
-            <div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_0"
-                  type="checkbox"
-                  class="custom-control-input"
-                  value="si"
-                />
-                <label for="cantidadInventario_0" class="custom-control-label"
-                  >Si</label
-                >
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_1"
-                  type="checkbox"
-                  class="custom-control-input"
-                  value="no"
-                />
-                <label for="cantidadInventario_1" class="custom-control-label"
-                  >No</label
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <label>Cantidad de inventario</label>
-            <div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_0"
-                  type="checkbox"
-                  class="custom-control-input"
-                  value="si"
-                />
-                <label for="cantidadInventario_0" class="custom-control-label"
-                  >Si</label
-                >
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input
-                  name="cantidadInventario"
-                  id="cantidadInventario_1"
-                  type="checkbox"
-                  class="custom-control-input"
-                  value="no"
-                />
-                <label for="cantidadInventario_1" class="custom-control-label"
+                <label for="productoActivo_1" class="custom-control-label"
                   >No</label
                 >
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-2">
           <div class="col-md-4">
             <form role="form">
               <div class="form-group">
-                <label for="exampleInputEmail1"> Email address </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                />
+                <label for="datosFabricante">Datos fabricante</label>
+                <input type="text" class="form-control" id="datosFabricante" />
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1"> Password </label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
+                <label for="referencia"> Referencia </label>
+                <input type="text" class="form-control" id="referencia" />
               </div>
             </form>
           </div>
           <div class="col-md-4">
             <form role="form">
               <div class="form-group">
-                <label for="exampleInputEmail1"> Email address </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                />
+                <label for="medidas"> Medidas </label>
+                <input type="number" class="form-control" id="medidas" />
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1"> Password </label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
+                <label for="presentación"> Presentación </label>
+                <input type="text" class="form-control" id="presentación" />
               </div>
             </form>
           </div>
           <div class="col-md-4">
             <form role="form">
               <div class="form-group">
-                <label for="exampleInputEmail1"> Email address </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                />
+                <label for="ubicacion"> Ubicación física </label>
+                <input type="text" class="form-control" id="ubicacion" />
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1"> Password </label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
+                <label for="equivalente"> Producto equivalente </label>
+                <input type="text" class="form-control" id="equivalente" />
               </div>
             </form>
           </div>
@@ -450,94 +408,80 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-3">
+        <div class="row mt-3">
+          <div class="col-md-4">
             <form role="form">
               <div class="form-group">
-                <label for="exampleInputEmail1"> Email address </label>
+                <label for="cuentaInventarios"> Cuenta de inventarios </label>
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="cuentaInventarios"
                 />
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1"> Password </label>
+                <label for="cuentaIngreso"> Cuenta contable de ingreso </label>
+                <input type="text" class="form-control" id="cuentaIngreso" />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form role="form">
+              <div class="form-group">
+                <label for="cuentaAjuste">
+                  Cuenta contable de ingreso por ajuste
+                </label>
+                <input type="text" class="form-control" id="cuentaAjuste" />
+              </div>
+              <div class="form-group">
+                <label for="devolucionVentas">
+                  Cuenta contable de devolución de ventas
+                </label>
+                <input type="text" class="form-control" id="devolucionVentas" />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form role="form">
+              <div class="form-group">
+                <label for="contableCosto"> Cuenta contable de costo </label>
+                <input type="text" class="form-control" id="contableCosto" />
+              </div>
+              <div class="form-group">
+                <label for="devolucionCompras">
+                  Cuenta contable de devolución de compras</label
+                >
                 <input
-                  type="password"
+                  type="text"
                   class="form-control"
-                  id="exampleInputPassword1"
+                  id="devolucionCompras"
                 />
               </div>
             </form>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <form role="form">
               <div class="form-group">
-                <label for="exampleInputEmail1"> Email address </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                />
+                <label for="contableGasto"> Cuenta contable de gasto </label>
+                <input type="text" class="form-control" id="contableGasto" />
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1"> Password </label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="col-md-3">
-            <form role="form">
-              <div class="form-group">
-                <label for="exampleInputEmail1"> Email address </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                />
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1"> Password </label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="col-md-3">
-            <form role="form">
-              <div class="form-group">
-                <label for="exampleInputEmail1"> Email address </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                />
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1"> Password </label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
+                <label for="gastoAjuste"
+                  >Cuenta contable de gasto por ajuste
+                </label>
+                <input type="text" class="form-control" id="gastoAjuste" />
               </div>
             </form>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
-            <button type="button" class="btn btn-md btn-danger">Button</button>
-          </div>
-          <div class="col-md-6">
-            <button type="button" class="btn btn-success">Button</button>
+          <div class="offset-3 col-9">
+            <button name="submit" type="submit" class="btn btn-danger">
+              Cancelar
+            </button>
+            <button name="submit" type="submit" class="btn btn-success">
+              Registar
+            </button>
           </div>
         </div>
       </div>
