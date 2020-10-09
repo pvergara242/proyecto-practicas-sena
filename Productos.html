@@ -1,107 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contabilidad SENA</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets//css/sidebar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-</head>
-<body>
-    <input type="checkbox" id="check" >
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets//css/sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <input type="checkbox" id="check" />
     <!-- header inicio -->
     <header>
-        <label for="check">
-            <i class="fas fa-bars" id="sidebar_btn"></i>
-        </label>
-        <div class="left_area">
-            <h3>CD  <span>MC</span></h3>
-        </div>
-        <div class="right_area">
-            <a href="#" class="Logout_btn">Cerrar sesión</a>
-        </div>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3>CD <span>MC</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="#" class="Logout_btn">Cerrar sesión</a>
+      </div>
     </header>
     <!-- header fin  -->
     <!-- sidebar inicio -->
     <div class="sidebar">
-        <center>
-            <img src="./assets/images/1200px-Sena_Colombia_logo.svg.png" class="profile_image" alt="">
-            <h4>Contabilidad SENA</h4>
-        </center>
-        <a href="./Ventas.html"><i class="fas fa-shopping-cart"></i><span>Ventas</span></a>
-        <a href="./RegistroClientes.html"><i class="fas fa-users"></i><span>Registro clientes</span></a>
-        <a href="./RegistroInventario.html"><i class="fas fa-dolly-flatbed"></i><span>Registro inventario</span></a>
-        <a href="./Compras.html"><i class="fas fa-shopping-basket"></i><span>Compras</span></a>
-        <a href="./Productos.html"><i class="fas fa-shopping-basket"></i><span>Registro de productos</span></a>
+      <center>
+        <img
+          src="./assets/images/1200px-Sena_Colombia_logo.svg.png"
+          class="profile_image"
+          alt=""
+        />
+        <h4>Contabilidad SENA</h4>
+      </center>
+      <a href="./Ventas.html"
+        ><i class="fas fa-shopping-cart"></i><span>Ventas</span></a
+      >
+      <a href="./RegistroClientes.html"
+        ><i class="fas fa-users"></i><span>Creación de terceros</span></a
+      >
+      <a href="./RegistroInventario.html"
+        ><i class="fas fa-dolly-flatbed"></i><span>Registro inventario</span></a
+      >
+      <a href="./Compras.html"
+        ><i class="fas fa-shopping-basket"></i><span>Compras</span></a
+      >
+      <a href="./Productos.html"
+        ><i class="fas fa-shopping-basket"></i
+        ><span>Registro de productos</span></a
+      >
     </div>
     <!-- sidebar fin  -->
-    
-    <form className="container-form"style="margin-top:100px; margin-left:420px;
-    width: 60%; justify-content: center;">
-        <h2 className="title-form" style="text-align: center;"> Registro de productos</h2>
-        <div class="form-group row">
-            <label for="text" class="col-3 col-form-label">Código</label> 
-            <div class="col-9">
-              <input id="text" name="text" type="text" class="form-control">
+
+    <form    
+      style="
+        margin-top: 100px;
+        margin-left: 420px;
+        width: 60%;
+        justify-content: center;
+        border: 2px solid red;
+        position: static;
+      "
+    >
+      <h2 className="title-form" style="text-align: center">
+        Registro de productos
+      </h2>
+      <div class="container-form">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              alt="Foto del producto"
+              src="./assets/images/1200px-Sena_Colombia_logo.svg.png"
+              class="img-thumbnail"
+            />
+
+            <div class="form-group mt-3">
+              <label for="fotoproducto"> Foto del producto </label>
+              <input type="file" class="form-control-file" id="fotoproducto" />
             </div>
           </div>
-          <div class="form-group row">
-            <label class="col-3 col-form-label" for="text1">Unidad</label> 
-            <div class="col-9">
-              <input id="text1" name="text1" type="text" class="form-control">
-            </div>
+          <div class="col-md-4">
+            <form role="form">
+              <div class="form-group">
+                <label for="codigo"> Codigo producto </label>
+                <input type="text" class="form-control" id="codigo" />
+              </div>
+              <div class="form-group">
+                <label for="nombreproducto"> Nombre del producto </label>
+                <input type="text" class="form-control" id="nombreproducto" />
+              </div>
+            </form>
           </div>
-          <div class="form-group row">
-            <label for="text2" class="col-3 col-form-label">Nombre</label> 
-            <div class="col-9">
-              <input id="text2" name="text2" type="text" class="form-control">
-            </div>
+          <div class="col-md-4">
+            <ul>
+              <li class="list-item">Unidades de medida</li>
+              <li class="list-item">Par</li>
+              <li class="list-item">Centimetro</li>
+              <li class="list-item">Decimetro</li>
+              <li class="list-item">Milimetro</li>
+            </ul>
           </div>
-          <div class="form-group row">
-            <label for="textarea" class="col-3 col-form-label">Descripción</label> 
-            <div class="col-9">
-              <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="text3" class="col-3 col-form-label">Especificaciones</label> 
-            <div class="col-9">
-              <input id="text3" name="text3" type="text" class="form-control">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="text4" class="col-3 col-form-label">Cantidad</label> 
-            <div class="col-9">
-              <input id="text4" name="text4" type="text" class="form-control">
-            </div>
-          </div>          
-          <div class="form-group row">
-            <label class="col-3">Productos equivalentes</label> 
-            <div class="col-9">
+        </div>
+        <div class="row mt-2">
+          <div class="col-md-3">
+            <label>Cantidad de inventario</label>
+            <div>
               <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="zapatos"> 
-                <label for="checkbox_0" class="custom-control-label">Zapatos</label>
+                <input
+                  name="cantidadInventario"
+                  id="cantidadInventario_0"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="si"
+                />
+                <label for="cantidadInventario_0" class="custom-control-label"
+                  >Si</label
+                >
               </div>
               <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="billeteras"> 
-                <label for="checkbox_1" class="custom-control-label">Billeteras</label>
+                <input
+                  name="cantidadInventario"
+                  id="cantidadInventario_1"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="no"
+                />
+                <label for="cantidadInventario_1" class="custom-control-label"
+                  >No</label
+                >
               </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="Bolsos"> 
-                <label for="checkbox_2" class="custom-control-label">Bolsos</label>
-              </div>
-            </div>
-          </div>         
-           
-          <div class="form-group row">
-            <div class="offset-3 col-9">
-              <button name="submit" type="submit" class="btn btn-success">Registar</button>
-              <button name="submit" type="submit" class="btn btn-danger">Cancelar</button>
             </div>
           </div>
-        
-      </form>
-    
-</body> 
+          <div class="col-md-3">
+            <label>Consumo</label>
+            <div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="consumo"
+                  id="consumo_0"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="si"
+                />
+                <label for="consumo_0" class="custom-control-label">Si</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="consumo"
+                  id="consumo_1"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="no"
+                />
+                <label for="consumo_1" class="custom-control-label">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label>Mercancía para la venta</label>
+            <div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="mercancia"
+                  id="mercancia_0"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="si"
+                />
+                <label for="mercancia_0" class="custom-control-label">Si</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="mercancia"
+                  id="mercancia_1"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="no"
+                />
+                <label for="mercancia_1" class="custom-control-label">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label>¿Es de producción interna?</label>
+            <div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="tipoProduccion"
+                  id="tipoProduccion_0"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="si"
+                />
+                <label for="tipoProduccion_0" class="custom-control-label"
+                  >Si</label
+                >
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="tipoProduccion"
+                  id="tipoProduccion_1"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="no"
+                />
+                <label for="tipoProduccion_1" class="custom-control-label"
+                  >No</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-md-3">
+            <label>Maneja lotes</label>
+            <div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="lotes"
+                  id="lotes_0"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="si"
+                />
+                <label for="lotes_0" class="custom-control-label">Si</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="lotes"
+                  id="lotes_1"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="no"
+                />
+                <label for="lotes_1" class="custom-control-label">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label>Es servicio</label>
+            <div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="servicio"
+                  id="servicio_0"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="si"
+                />
+                <label for="servicio_0" class="custom-control-label">Si</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="servicio"
+                  id="servicio_1"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="no"
+                />
+                <label for="servicio_1" class="custom-control-label">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label>Incluir producto en conteo físico</label>
+            <div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="productoConteo"
+                  id="productoConteo_0"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="si"
+                />
+                <label for="productoConteo_0" class="custom-control-label"
+                  >Si</label
+                >
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="productoConteo"
+                  id="productoConteo_1"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="no"
+                />
+                <label for="productoConteo_1" class="custom-control-label"
+                  >No</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label>Producto activo</label>
+            <div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="productoActivo"
+                  id="productoActivo_0"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="si"
+                />
+                <label for="productoActivo_0" class="custom-control-label"
+                  >Si</label
+                >
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="productoActivo"
+                  id="productoActivo_1"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="no"
+                />
+                <label for="productoActivo_1" class="custom-control-label"
+                  >No</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-md-4">
+            <form role="form">
+              <div class="form-group">
+                <label for="datosFabricante">Datos fabricante</label>
+                <input type="text" class="form-control" id="datosFabricante" />
+              </div>
+              <div class="form-group">
+                <label for="referencia"> Referencia </label>
+                <input type="text" class="form-control" id="referencia" />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form role="form">
+              <div class="form-group">
+                <label for="medidas"> Medidas </label>
+                <input type="number" class="form-control" id="medidas" />
+              </div>
+              <div class="form-group">
+                <label for="presentación"> Presentación </label>
+                <input type="text" class="form-control" id="presentación" />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form role="form">
+              <div class="form-group">
+                <label for="ubicacion"> Ubicación física </label>
+                <input type="text" class="form-control" id="ubicacion" />
+              </div>
+              <div class="form-group">
+                <label for="equivalente"> Producto equivalente </label>
+                <input type="text" class="form-control" id="equivalente" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for=" stockMínimo" class="col-form-label"
+              >Dato stock mínimo</label
+            >
+            <div>
+              <input
+                id="stockMínimo"
+                name="stockMínimo"
+                type="text"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for=" stockMaximo" class="col-form-label"
+              >Dato stock máximo</label
+            >
+            <div>
+              <input
+                id=" stockMaximo"
+                name="stockMaximo"
+                type="text"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="tiempoReposicion" class="col-form-label"
+              >Tiempo de reposición</label
+            >
+            <div>
+              <input
+                id="tiempoReposicion"
+                name="tiempoReposicion"
+                type="text"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-4">
+            <form role="form">
+              <div class="form-group">
+                <label for="cuentaInventarios"> Cuenta de inventarios </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cuentaInventarios"
+                />
+              </div>
+              <div class="form-group">
+                <label for="cuentaIngreso"> Cuenta contable de ingreso </label>
+                <input type="text" class="form-control" id="cuentaIngreso" />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form role="form">
+              <div class="form-group">
+                <label for="cuentaAjuste">
+                  Cuenta contable de ingreso por ajuste
+                </label>
+                <input type="text" class="form-control" id="cuentaAjuste" />
+              </div>
+              <div class="form-group">
+                <label for="devolucionVentas">
+                  Cuenta contable de devolución de ventas
+                </label>
+                <input type="text" class="form-control" id="devolucionVentas" />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form role="form">
+              <div class="form-group">
+                <label for="contableCosto"> Cuenta contable de costo </label>
+                <input type="text" class="form-control" id="contableCosto" />
+              </div>
+              <div class="form-group">
+                <label for="devolucionCompras">
+                  Cuenta contable de devolución de compras</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="devolucionCompras"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form role="form">
+              <div class="form-group">
+                <label for="contableGasto"> Cuenta contable de gasto </label>
+                <input type="text" class="form-control" id="contableGasto" />
+              </div>
+              <div class="form-group">
+                <label for="gastoAjuste"
+                  >Cuenta contable de gasto por ajuste
+                </label>
+                <input type="text" class="form-control" id="gastoAjuste" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-3 col-9">
+            <button name="submit" type="submit" class="btn btn-danger">
+              Cancelar
+            </button>
+            <button name="submit" type="submit" class="btn btn-success">
+              Registar
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
 </html>
