@@ -16,13 +16,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
   </head>
-  <body>
-    <input type="checkbox" id="check" />
+  <body>  <!-- nuevo -->
+    <input  style="z-index: 10;" type="checkbox" id="check" />
     <!-- header inicio -->
-    <header>
-      <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-      </label>
+    <header style="z-index: 10;  position: fixed; top: 0; left: 0;">  <!-- nuevo-->
       <div class="left_area">
         <h3>CD <span>MC</span></h3>
       </div>
@@ -32,10 +29,13 @@
     </header>
     <!-- header fin  -->
     <!-- sidebar inicio -->
-    <div class="sidebar">
+    <div class="sidebar">  <!-- nuevo -->
+      <label style="height: 2px; width: 2px; background-color: black;" for="check">  <!-- nuevo -->
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
       <center>
         <img
-          src="./assets/images/1200px-Sena_Colombia_logo.svg.png"
+        src="./assets/images/1200px-Sena_Colombia_logo.svg.png"
           class="profile_image"
           alt=""
         />
@@ -60,14 +60,15 @@
     </div>
     <!-- sidebar fin  -->
 
-    <form    
+    <!-- z-index: -1; nuevo  -->
+    <form
       style="
+        z-index: -1; 
         margin-top: 100px;
         margin-left: 420px;
         width: 60%;
         justify-content: center;
-        border: 2px solid red;
-        position: static;
+        position: relative;
       "
     >
       <h2 className="title-form" style="text-align: center">
@@ -101,7 +102,7 @@
           </div>
           <div class="col-md-4">
             <ul>
-              <li class="list-item">Unidades de medida</li>
+              <p class="list-item">Unidades de medida</p>
               <li class="list-item">Par</li>
               <li class="list-item">Centimetro</li>
               <li class="list-item">Decimetro</li>
@@ -459,22 +460,23 @@
               </div>
             </form>
           </div>
-          <div class="col-md-4">
-            <form role="form">
-              <div class="form-group">
-                <label for="contableGasto"> Cuenta contable de gasto </label>
-                <input type="text" class="form-control" id="contableGasto" />
-              </div>
-              <div class="form-group">
-                <label for="gastoAjuste"
-                  >Cuenta contable de gasto por ajuste
-                </label>
-                <input type="text" class="form-control" id="gastoAjuste" />
-              </div>
-            </form>
-          </div>
         </div>
+
         <div class="row">
+          <div class="col-md-4">
+            <label for="contableGasto"> Cuenta contable de gasto </label>
+            <input type="text" class="form-control" id="contableGasto" />
+          </div>
+          <div class="col-md-4">
+            <label for="gastoAjuste">
+              Cuenta contable de gasto por ajuste
+            </label>
+            <input type="text" class="form-control" id="gastoAjuste" />
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+
+        <div class="row mt-3">
           <div class="offset-3 col-9">
             <button name="submit" type="submit" class="btn btn-danger">
               Cancelar

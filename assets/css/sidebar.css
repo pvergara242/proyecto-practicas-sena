@@ -42,8 +42,8 @@ header {
 }
 .sidebar {
   background: #fc7323;
-  margin-top: 70px;
-  padding-top: 30px;
+  margin-top: 15px;
+  padding-top: 40px;
   position: fixed;
   left: 0;
   width: 280px;
@@ -91,11 +91,12 @@ label #sidebar_btn {
   color: #fff;
   position: fixed;
   cursor: pointer;
-  left: 300px;
+  left: 250px;
   font-size: 20px;
   margin: 5px 0;
   transition: 0.5s;
   transition-property: color;
+  transition: left 0.5s ;/*nuevo*/
 }
 
 label #sidebar_btn:hover {
@@ -104,6 +105,11 @@ label #sidebar_btn:hover {
 
 #check:checked ~ .sidebar {
   left: -230px;
+}
+ /*nuevo*/
+#check:checked ~ .sidebar #sidebar_btn {
+  left: 15px;
+  transition: left 0.5s;
 }
 
 #check:checked ~ .sidebar a span {
