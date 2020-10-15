@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contabilidad SENA</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets//css/sidebar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-</head>
-<body>
-    <input type="checkbox" id="check" >
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets//css/sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <input style="z-index: 10" type="checkbox" id="check" />
     <!-- header inicio -->
-    <header>
-        <label for="check">
-            <i class="fas fa-bars" id="sidebar_btn"></i>
-        </label>
-        <div class="left_area">
-            <h3>CD  <span>MC</span></h3>
-        </div>
-        <div class="right_area">
-            <a href="#" class="Logout_btn">Cerrar sesión</a>
-        </div>
+    <header style="z-index: 10; position: fixed; top: 0; left: 0">
+      <div class="left_area">
+        <h3>CD <span>MC</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="#" class="Logout_btn">Cerrar sesión</a>
+      </div>
     </header>
     <!-- header fin  -->
     <!-- sidebar inicio -->
     <div class="sidebar">
-        <center>
-            <img src="./assets/images/1200px-Sena_Colombia_logo.svg.png" class="profile_image" alt="logo">
-            <h4>Contabilidad SENA</h4>
-        </center>
-        <a href="./Ventas.html"><i class="fas fa-shopping-cart"></i><span>Ventas</span></a>
-        <a href="./RegistroClientes.html"><i class="fas fa-users"></i><span>Creación de terceros</span></a>
-        <a href="./RegistroInventario.html"><i class="fas fa-dolly-flatbed"></i><span>Registro inventario</span></a>
-        <a href="./Compras.html"><i class="fas fa-shopping-basket"></i><span>Compras</span></a>
-        <a href="./Productos.html"><i class="fas fa-shopping-basket"></i><span>Registro de productos</span></a>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <center>
+        <img
+          src="./assets/images/1200px-Sena_Colombia_logo.svg.png"
+          class="profile_image"
+          alt="logo"
+        />
+        <h4>Contabilidad SENA</h4>
+      </center>
+      <a href="./Ventas.html"
+        ><i class="fas fa-shopping-cart"></i><span>Ventas</span></a
+      >
+      <a href="./RegistroClientes.html"
+        ><i class="fas fa-users"></i><span>Creación de terceros</span></a
+      >
+      <a href="./RegistroInventario.html"
+        ><i class="fas fa-dolly-flatbed"></i><span>Registro inventario</span></a
+      >
+      <a href="./Compras.html"
+        ><i class="fas fa-shopping-basket"></i><span>Compras</span></a
+      >
+      <a href="./Productos.html"
+        ><i class="fas fa-shopping-basket"></i
+        ><span>Registro de productos</span></a
+      >
     </div>
     <!-- sidebar fin  -->
-    
+
     <div class="clientes">
-        <h1 class="hola" style="margin-top:100px; margin-left:500px">Registro de compras</h1>
+      <h1 class="hola" style="margin-top: 100px; margin-left: 500px">
+        Registro de compras
+      </h1>
     </div>
-   
-    
-</body> 
+  </body>
 </html>

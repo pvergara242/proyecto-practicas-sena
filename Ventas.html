@@ -19,12 +19,9 @@
     />
   </head>
   <body>
-    <input type="checkbox" id="check" />
+    <input style="z-index: 10" type="checkbox" id="check" />
     <!-- header inicio -->
-    <header>
-      <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-      </label>
+    <header style="z-index: 10; position: fixed; top: 0; left: 0">
       <div class="left_area">
         <h3>CD<span>MC</span></h3>
       </div>
@@ -35,6 +32,9 @@
     <!-- header fin  -->
     <!-- sidebar inicio -->
     <div class="sidebar">
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
       <center>
         <img
           src="./assets/images/1200px-Sena_Colombia_logo.svg.png"
@@ -78,11 +78,10 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
-              <h3>
-                Paola Vergara
-              </h3> 
+              <h3>Paola Vergara</h3>
               <address>
-                Cristo Rey, Guayabal <br /> <abbr title="Phone">Celular:</abbr> 31457865677
+                Cristo Rey, Guayabal <br />
+                <abbr title="Phone">Celular:</abbr> 31457865677
               </address>
             </div>
           </div>
@@ -153,7 +152,7 @@
       </fieldset>
 
       <div class="form-group row">
-        <div class="offset-3 col-9">          
+        <div class="offset-3 col-9">
           <button name="submit" type="submit" class="btn btn-danger">
             Cancelar
           </button>

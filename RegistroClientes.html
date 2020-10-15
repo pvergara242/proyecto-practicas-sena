@@ -19,12 +19,9 @@
     />
   </head>
   <body>
-    <input type="checkbox" id="check" />
+    <input style="z-index: 10;" type="checkbox" id="check" />
     <!-- header inicio -->
-    <header>
-      <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-      </label>
+    <header  style="z-index: 10;  position: fixed; top: 0; left: 0;">
       <div class="left_area">
         <h3>CD <span>MC</span></h3>
       </div>
@@ -35,6 +32,9 @@
     <!-- header fin  -->
     <!-- sidebar inicio -->
     <div class="sidebar">
+      <label  style="height: 2px; width: 2px; background-color: black;" for="check"for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
       <center>
         <img
           src="./assets/images/1200px-Sena_Colombia_logo.svg.png"
