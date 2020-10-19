@@ -15,12 +15,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
-
   </head>
-  <body>  <!-- nuevo -->
-    <input style="z-index: 10;" type="checkbox" id="check" />
+  <body>
+    <!-- nuevo -->
+    <input style="z-index: 10" type="checkbox" id="check" />
     <!-- header inicio -->
-    <header style="z-index: 10;  position: fixed; top: 0; left: 0; height: 60px;">  <!-- nuevo-->
+    <header style="z-index: 10; position: fixed; top: 0; left: 0; height: 60px">
+      <!-- nuevo-->
       <div class="left_area">
         <h3>CD<span>MC</span></h3>
       </div>
@@ -30,13 +31,18 @@
     </header>
     <!-- header fin  -->
     <!-- sidebar inicio -->
-    <div class="sidebar">  <!-- nuevo -->
-      <label style="height: 2px; width: 2px; background-color: black;" for="check">  <!-- nuevo -->
+    <div class="sidebar">
+      <!-- nuevo -->
+      <label
+        style="height: 2px; width: 2px; background-color: black"
+        for="check"
+      >
+        <!-- nuevo -->
         <i class="fas fa-bars" id="sidebar_btn"></i>
       </label>
       <center>
         <img
-        src="./assets/images/1200px-Sena_Colombia_logo.svg.png"
+          src="./assets/images/1200px-Sena_Colombia_logo.svg.png"
           class="profile_image"
           alt="imagen producto"
         />
@@ -64,7 +70,7 @@
     <!-- z-index: -1; nuevo  -->
     <form
       style="
-        z-index: -1; 
+        z-index: -1;
         margin-top: 100px;
         margin-left: 420px;
         width: 60%;
@@ -475,6 +481,20 @@
           </div>
           <div class="col-md-4"></div>
         </div>
+        <fieldset class="form-group">
+          <legend>Impuestos</legend>
+          <div class="row">
+            <div class="col-md-4">
+              <label for="impuestoCompra"> Impuesto en compras </label>
+              <input type="text" class="form-control" id="impuestoCompra" />
+            </div>
+            <div class="col-md-4">
+              <label for="impuestoVenta"> Impuesto en ventas </label>
+              <input type="text" class="form-control" id="impuestoVenta" />
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+        </fieldset>
 
         <div class="row mt-3">
           <div class="offset-3 col-9">
