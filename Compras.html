@@ -71,43 +71,243 @@
         justify-content: center;
       "
     >
-      <h1 class="hola" style="margin-top: 100px; margin-left: 500px">
+      <h2 className="title-form" style="text-align: center">
         Registro de compras
-      </h1>
+      </h2>
 
-      
-      <div class="container-fluid">
+      <div
+        style="border: 2px solid blue; margin-bottom: 25px; padding: 15px"
+        class="container-fluid"
+      >
         <div class="row">
           <div class="col-md-4">
-            <label for="impuestoCompra"> Impuesto en compras </label>
-            <input type="text" class="form-control" id="impuestoCompra" />            
+            <label for="codigoComprobante">Codigo de comprobante </label>
+            <input
+              type="text"
+              class="form-control"
+              id="codigoComprobante"
+              required
+            />
           </div>
           <div class="col-md-4">
-            <label for="impuestoCompra"> Impuesto en compras </label>
-            <input type="text" class="form-control" id="impuestoCompra" /> 
+            <label for="numeroFactura"> Número de factura </label>
+            <input
+              type="text"
+              class="form-control"
+              id="numeroFactura"
+              required
+            />
           </div>
           <div class="col-md-4">
-            <label for="impuestoCompra"> Impuesto en compras </label>
-            <input type="text" class="form-control" id="impuestoCompra" /> 
+            <label for="detalleGeneral"> Detalle general</label>
+            <input
+              type="text"
+              class="form-control"
+              id="detalleGeneral"
+              required
+            />
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
-            <label for="impuestoCompra"> Impuesto en compras </label>
-            <input type="text" class="form-control" id="impuestoCompra" /> 
+            <label for="fechaCompra"> Fecha de compra </label>
+            <input type="date" class="form-control" id="fechaCompra" required />
           </div>
           <div class="col-md-4">
-            <label for="impuestoCompra"> Impuesto en compras </label>
-            <input type="text" class="form-control" id="impuestoCompra" /> 
+            <label for="codigoTercero"> Código del tercero</label>
+            <input
+              type="text"
+              class="form-control"
+              id="codigoTercero"
+              required
+            />
           </div>
           <div class="col-md-4">
-            <label for="impuestoCompra"> Impuesto en compras </label>
-            <input type="text" class="form-control" id="impuestoCompra" /> 
+            <label for="nombreTercero"> Nombre del tercero </label>
+            <input type="text" class="form-control" id="nombreTercero" />
           </div>
         </div>
       </div>
-    
-    
-  </form>   
+
+      <div
+        style="border: 2px solid orange; margin-bottom: 25px; padding: 15px"
+        class="container-fluid"
+      >
+        <div class="row">
+          <div class="col-md-4">
+            <label for="codigoProducto">Codigo del producto </label>
+            <input
+              type="text"
+              class="form-control"
+              id="codigoProducto"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="nombreProducto"> Nombre del producto </label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombreProducto"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="cantidades"> Cantidades</label>
+            <input
+              type="number"
+              class="form-control"
+              id="cantidades"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="unidadesDisponibles"> Unidades disponibles</label>
+            <input
+              type="number"
+              class="form-control"
+              id="unidadesDisponibles"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="costoUnitario"> Costo unitario de compra</label>
+            <input
+              type="number"
+              class="form-control"
+              id="costoUnitario"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="costoTotal"> Costo total de compra </label>
+            <input type="number" class="form-control" id="nombreTercero" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="border: 2px solid green; margin-bottom: 25px; padding: 15px"
+        class="container-fluid"
+      >
+        <div class="row">
+          <div class="col-md-4">
+            <label for="costoTotal"> Costo total de compra </label>
+            <input type="number" class="form-control" id="nombreTercero" />
+          </div>
+
+          <div class="col-md-4">
+            <label>Impuestos</label>
+            <div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="impuestos"
+                  id="impuestos_0"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="si"
+                />
+                <label for="impuestos_0" class="custom-control-label">Si</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="impuestos"
+                  id="impuestos_1"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="no"
+                />
+                <label for="impuestos_1" class="custom-control-label">No</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="porcentajeImpuesto">Porcentaje impuesto</label>
+            <input
+              type="text"
+              class="form-control"
+              id="porcentajeImpuesto"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="totalImpuestos"> Total impuestos </label>
+            <input
+              type="number"
+              class="form-control"
+              id="totalImpuestos"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <label>Retencion en la fuente</label>
+            <div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="retencionFuente"
+                  id="retencionFuente_0"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="si"
+                />
+                <label for="retencionFuente_0" class="custom-control-label"
+                  >Si</label
+                >
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input
+                  name="retencionFuente"
+                  id="retencionFuente_1"
+                  type="checkbox"
+                  class="custom-control-input"
+                  value="no"
+                />
+                <label for="retencionFuente_1" class="custom-control-label"
+                  >No</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="porcentajeRetefte">Porcentaje retefte</label>
+            <input
+              type="number"
+              class="form-control"
+              id="porcentajeRetefte"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <label for="totalRetencion"> Total retención en la fuente </label>
+            <input
+              type="number"
+              class="form-control"
+              id="totalRetencion"
+              required
+            />
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="offset-3 col-9">
+          <button name="submit" type="submit" class="btn btn-danger">
+            Cancelar
+          </button>
+          <button name="submit" type="submit" class="btn btn-success">
+            Registar
+          </button>
+        </div>
+      </div>
+    </form>
   </body>
 </html>
