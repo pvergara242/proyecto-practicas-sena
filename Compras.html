@@ -19,7 +19,7 @@
   <body>
     <input style="z-index: 10" type="checkbox" id="check" />
     <!-- header inicio -->
-    <header style="z-index: 10; position: fixed; top: 0; left: 0; height: 60px;">
+    <header style="z-index: 10; position: fixed; top: 0; left: 0; height: 60px">
       <div class="left_area">
         <h3>CD<span>MC</span></h3>
       </div>
@@ -30,7 +30,10 @@
     <!-- header fin  -->
     <!-- sidebar inicio -->
     <div class="sidebar">
-      <label style="height: 2px; width: 2px; background-color: black;" for="check">
+      <label
+        style="height: 2px; width: 2px; background-color: black"
+        for="check"
+      >
         <i class="fas fa-bars" id="sidebar_btn"></i>
       </label>
       <center>
@@ -59,11 +62,52 @@
       >
     </div>
     <!-- sidebar fin  -->
-
-    <div class="clientes">
+    <form
+      style="
+        z-index: -1;
+        margin-top: 100px;
+        margin-left: 420px;
+        width: 60%;
+        justify-content: center;
+      "
+    >
       <h1 class="hola" style="margin-top: 100px; margin-left: 500px">
         Registro de compras
       </h1>
-    </div>
+
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <label for="impuestoCompra"> Impuesto en compras </label>
+            <input type="text" class="form-control" id="impuestoCompra" />            
+          </div>
+          <div class="col-md-4">
+            <label for="impuestoCompra"> Impuesto en compras </label>
+            <input type="text" class="form-control" id="impuestoCompra" /> 
+          </div>
+          <div class="col-md-4">
+            <label for="impuestoCompra"> Impuesto en compras </label>
+            <input type="text" class="form-control" id="impuestoCompra" /> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="impuestoCompra"> Impuesto en compras </label>
+            <input type="text" class="form-control" id="impuestoCompra" /> 
+          </div>
+          <div class="col-md-4">
+            <label for="impuestoCompra"> Impuesto en compras </label>
+            <input type="text" class="form-control" id="impuestoCompra" /> 
+          </div>
+          <div class="col-md-4">
+            <label for="impuestoCompra"> Impuesto en compras </label>
+            <input type="text" class="form-control" id="impuestoCompra" /> 
+          </div>
+        </div>
+      </div>
+    
+    
+  </form>   
   </body>
 </html>
